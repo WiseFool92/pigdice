@@ -45,11 +45,15 @@ git clone {link to repository}
 #### Pig dice
 |                          Behavior                          | Input  | Output  |
 | :--------------------------------------------------------: | :----: | :-----: |
-| The program accepts the user's input for first name | 'Bob' | 'Bob'  |
-| The program accepts the user's input for last name | 'Gregas' | 'Gregas'  |
-| The program accepts the user's input for phone number | '5415789846' | '5415789846'  |
+| The program will have two arrays to hold each player's score | player name | Steve = array 1 & Frank = array 2 |
+| The program will award no points and pass the turn to the next player if a one is rolled | 1 | Pass turn |
+| The program will award victory to the first player to score 100 or more | score =>100 | Victory |
+| The program will have a dice roll button to determine a 1-6 outcome | 'mouse click' | '1-6'  |
+| 
+| The program will pass turn to the next player if a one is rolled | 'Gregas' | 'Gregas'  |
+| The program accepts the user's input for phone number | '5415789846' | '5415789846' |
 | The program accepts the user's input for email address | 'bob' | 'bob@gmail.com'  |
-| The program accepts the user's input for physcial address | '148 elm way, hilford CT 06379' | '148 elm way, hilford CT 06379'  |
+| The program accepts the user's input for physcial address | '148 elm way, hilford CT 06379' | '148 elm way, hilford CT 06379' |
 
 
 
@@ -62,6 +66,7 @@ _N/A_ - 4/8/2020
 ## gh-pages
  
 https://WiseFool92.github.io/pigdice
+https://tayphill13.github.io/Pig-Dice
 
 ## Support
 
