@@ -1,12 +1,12 @@
 // Business Logic ---------
 
-function Player()
+function Players(name) {
   this.name = name;
   this.currentRoundScore = currentRoundScore;
   this.currentGameScore = currentGameScore;
 
-  .prototype()
-
+  name.prototype.push([])
+}
 
 
 // function rollDice() {
