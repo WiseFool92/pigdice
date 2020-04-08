@@ -3,8 +3,9 @@
 // Setting up the Constructor to be able to add player name and have the running score associated with that name
 function Players(name) {
   this.name = name;
-  this.roundScore = roundScore;
-  this.gameScore = gameScore;
+  this.turnScore = 0;
+  this.gameScore = 0;
+  
 }
 
 // This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes.
@@ -17,7 +18,7 @@ function Diceroll(total) {
 
 function rollDice() {
   return 1 + Math.floor(Math.random()*6)
-  console.log()
+  alert("the dice were rolled")
 }
 
 Diceroll.prototype.addDice = function () {
@@ -27,6 +28,8 @@ Diceroll.prototype.addDice = function () {
 // Creates our players
 var playerOne = new Players("player one");
 var playerTwo = new Players("player two");
+// Create our Dice
+var dice = new Dice();
 
 // function rollDice() {
 //   var die1 = document.getElementById("die1");
