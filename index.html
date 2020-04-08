@@ -17,9 +17,29 @@
 </head>
 
 <body>
-<div id="die1" class="dice">0</div>
-<div id="die2" class="dice">0</div>
-<button onclick="rolldice()" type="submit" class="btn btn-success">Roll Dice</button>
-<h2 id="status"></h2>
+  <h1 class="text-center">Play a game of pig dice with me!</h1>
+    <div class="container">
+      <div class="center" class="row">
+        <div class="col-md-6" id="player1">
+          <h2>Player One<h2>
+          <div id="player1">
+            <button id="rolldice" type="submit" class="btn btn-success">Roll Dice</button>
+          </div>
+          <div id="output1">
+
+          </div>
+        </div>
+        <div class="col-md-6" id="player2">
+          <h2>Player Two</h2>
+          <div id="player2">
+            <button id="rolldice" type="submit" class="btn btn-success">Roll Dice</button>
+
+          </div>
+          <div id="output2">
+
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>

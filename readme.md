@@ -47,16 +47,9 @@ git clone {link to repository}
 | :--------------------------------------------------------: | :----: | :-----: |
 | The program will have two arrays to hold each player's score | player name | Steve = array 1 & Frank = array 2 |
 | The program will award no points and pass the turn to the next player if a one is rolled | 1 | Pass turn |
-| The program will award victory to the first player to score 100 or more | score =>100 | Victory |
 | The program will have a dice roll button to determine a 1-6 outcome | 'mouse click' | '1-6'  |
-| 
-| The program will pass turn to the next player if a one is rolled | 'Gregas' | 'Gregas'  |
-| The program accepts the user's input for phone number | '5415789846' | '5415789846' |
-| The program accepts the user's input for email address | 'bob' | 'bob@gmail.com'  |
-| The program accepts the user's input for physcial address | '148 elm way, hilford CT 06379' | '148 elm way, hilford CT 06379' |
-
-
-
+| The player can "hold" which ends the turn and adds their dice count to their running total | 5 | 17 |
+| The program will award victory to the first player to score 100 or more | score =>100 | Victory |
 
 ---
 ## Known Bugs
