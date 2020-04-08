@@ -17,6 +17,7 @@ function Diceroll(total) {
 
 function rollDice() {
   return 1 + Math.floor(Math.random()*6)
+  console.log()
 }
 
 Diceroll.prototype.addDice = function () {
@@ -42,6 +43,16 @@ var playerTwo = new Players("player two");
 // UI Logic ----------
 
 $(document).ready(function() {
+
+  // player one roll event
+  $("#rolldice").on("click", function() {
+    
+  })
+
+  // player two roll event
+  $("#rolldice2")
   event.preventDefault();
+
+
   console.log(diceTotal);
 });
