@@ -32,6 +32,8 @@ var dice = new Dice();
 //   this.sides = sides || 6;
 // }
 
+// Sum of the totals
+Players
 
 
 // UI Logic ----------
@@ -40,7 +42,7 @@ $(document).ready(function() {
 
   // player one roll event
   $("#rolldice").on("click", function() {
-    var dice = dice.roll();
+//    var dice = dice.roll();
   })
 
   // player two roll event
