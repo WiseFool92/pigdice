@@ -45,11 +45,12 @@ git clone {link to repository}
 #### Pig dice
 |                          Behavior                          | Input  | Output  |
 | :--------------------------------------------------------: | :----: | :-----: |
-| The program will have two arrays to hold each player's score | player name | Steve = array 1 & Frank = array 2 |
-| The program will award no points and pass the turn to the next player if a one is rolled | 1 | Pass turn |
+| The user will be able to see each player's score | dice roll | player one = 12 & player two = 22 |
 | The program will have a dice roll button to determine a 1-6 outcome | 'mouse click' | '1-6'  |
+| The program will award no points and pass the turn to the next player if a one is rolled | 1 | Pass turn |
 | The player can "hold" which ends the turn and adds their dice count to their running total | 5 | 17 |
 | The program will award victory to the first player to score 100 or more | score =>100 | Victory |
+| The program has a popup declaring which player emerged victorious | player's score exceeds 100 | player victory popup |
 
 ---
 ## Known Bugs

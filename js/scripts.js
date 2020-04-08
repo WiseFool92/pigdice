@@ -7,15 +7,26 @@ function Players(name) {
   this.gameScore = gameScore;
 }
 
-// This constructor will hold our array to count up to 100 for each player
+// This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes.
 function Diceroll(total) {
   this.dice = [];
   this.total.push(total);
 }
 
+// 
+
+function rollDice() {
+  return 1 + Math.floor(Math.random()*6)
+  console.log(rollDice())
+}
+
 Diceroll.prototype.addDice = function () {
   this.roundScore = roundScore += Diceroll;
 }
+
+// Creates our players
+var playerOne = new Players("player one");
+var playerTwo = new Players("player two");
 
 // function rollDice() {
 //   var die1 = document.getElementById("die1");
