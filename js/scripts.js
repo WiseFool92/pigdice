@@ -5,7 +5,6 @@ function Players(name) {
   this.name = name;
   this.turnScore = 0;
   this.gameScore = 0;
-  
 }
 
 // This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes.
@@ -14,8 +13,7 @@ function Diceroll(total) {
   this.total.push(total);
 }
 
-// 
-
+// This method we created will run the two subsequent functions to return a dice roll between 1-6
 function rollDice() {
   return 1 + Math.floor(Math.random()*6)
   alert("the dice were rolled")
@@ -28,20 +26,10 @@ Diceroll.prototype.addDice = function () {
 // Creates our players
 var playerOne = new Players("player one");
 var playerTwo = new Players("player two");
-// Create our Dice
+// Create our Dice... do I even need to do this...?
 var dice = new Dice();
 
-// function rollDice() {
-//   var die1 = document.getElementById("die1");
-//   var die2 = document.getElementById("die2");
-//   var status = document.getElementById("status");
-//   var d1 = Math.floor(Math.random() * 6) +1;
-//   var d2 = Math.floor(Math.random() * 6) +1;
-//   var diceTotal = d1 + d2;
-//   die1.innerHTML = d1;
-//   die2.innerHTML = d2;
-//   status.innerHTML = "You rolled "+diceTotal+"."; 
-// }
+
 
 // UI Logic ----------
 
