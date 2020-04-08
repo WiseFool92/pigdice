@@ -28,6 +28,9 @@ var playerOne = new Players("player one");
 var playerTwo = new Players("player two");
 // Create our Dice... do I even need to do this...?
 var dice = new Dice();
+// function Dice(sides) {        --- Sides is never defined in our rollDice method
+//   this.sides = sides || 6;
+// }
 
 
 
@@ -37,7 +40,7 @@ $(document).ready(function() {
 
   // player one roll event
   $("#rolldice").on("click", function() {
-    
+    var dice = dice.roll();
   })
 
   // player two roll event
