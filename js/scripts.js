@@ -21,8 +21,8 @@ Player.prototype.addDice = function (number) {
 
 //hold condition to add up accumulated rolls this round
 Player.prototype.hold = function () {
-  this.turnScore + this.gameScore; this.gameScore;
-  (i = 0);
+  this.gameScore += this.turnScore;
+  //(i = 0);
 }
 
 // Player.prototype.switchPlayers = function() {
@@ -69,9 +69,9 @@ $(document).ready(function() {
   })
   
   // Upon clicking hold this will display the total gameScore of the player
-  $("#hold1").on("click", function() {
+  $("#hold").on("click", function() {
     playerOne.hold();
-    $("#total1").text(turnScore);
+    $("#total1").text(playerOne.turnScore);
   })
 
   // player two roll event
@@ -83,9 +83,9 @@ $(document).ready(function() {
   })
 
   // Upon clicking hold this will display the total gameScore of the player
-  $("#hold1").on("click", function() {
+  $("#hold2").on("click", function() {
     playerTwo.hold();
-    $("#total2").text(turnScore);
+    $("#total2").text(playerTwo.turnScore);
   })
 
   // event.preventDefault();
