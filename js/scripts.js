@@ -9,7 +9,7 @@ function Players(name) {
 }
 
 // This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes.
-function Diceroll(total) {
+function Score(total) {
   this.dice = [];
   this.total.push(total);
 }
@@ -47,11 +47,13 @@ $(document).ready(function() {
 
   // player one roll event
   $("#rolldice").on("click", function() {
-//    var dice = roll;
+    player1 = rollDice();
+  
   })
 
   // player two roll event
   $("#rolldice2").on("click", function() {
+    player2 = rollDice();
   event.preventDefault();
   })
 
