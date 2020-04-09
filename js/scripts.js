@@ -12,13 +12,6 @@ function Player(name) {
 var playerOne = new Player("player one");
 var playerTwo = new Player("player two");
 
-// function Score(total) {
-//   this.total.push(total);
-// }
-// Score.prototype.addDice = function () {
-//   this.totalScore = turnScore + gameScore;
-// }
-
 // Sum of the totals
 Player.prototype.addDice = function (number) {
   this.dice.push(number)
@@ -26,9 +19,29 @@ Player.prototype.addDice = function (number) {
   console.log(this.turnScore);
 }
 
-Player.prototype.switchPlayers = function() {
-
+//hold condition to add up accumulated rolls this round
+Player.prototype.hold = function () {
+  this.turnScore + this.gameScore; this.gameScore;
+  (i = 0);
 }
+
+// Player.prototype.switchPlayers = function() {
+// }
+
+// //Travis Example
+// ...
+// this.currentPlayerIndex = 0;
+// ...
+// var currentPlayer = game.currentPlayer[game.currentPlayerIndex];
+// ...
+
+
+// Method to switch players:
+// ...
+// this.currentPlayerIndex = 1 - this.currentPlayerIndex;
+// ...
+// // Travis example
+
 
 // Victory Condition
 Player.prototype.victor = function() {
@@ -55,9 +68,10 @@ $(document).ready(function() {
     $("#total1").text()
   })
   
+  // Upon clicking hold this will display the total gameScore of the player
   $("#hold1").on("click", function() {
     playerOne.hold();
-    $("#total1").text(playerOne.turnScore);
+    $("#total1").text(turnScore);
   })
 
   // player two roll event
@@ -68,9 +82,10 @@ $(document).ready(function() {
     $("#total2").text()
   })
 
+  // Upon clicking hold this will display the total gameScore of the player
   $("#hold1").on("click", function() {
     playerTwo.hold();
-    $("#total2").text(playerTwo.turnScore);
+    $("#total2").text(turnScore);
   })
 
   // event.preventDefault();
