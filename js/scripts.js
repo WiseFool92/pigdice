@@ -18,6 +18,13 @@ function rollDice() {
   return 1 + Math.floor(Math.random()*6) 
 }
 
+// This method will end the current player's turn if a 1 is rolled & their accumulated score for the turn is discarded
+// Player.prototype.turnScoreReset = function () {
+//   if (this.turnScore === 1) {
+//     this.currentTurnScore = 0;
+//   }
+// }
+
 // Sum of the totals
 Player.prototype.addDice = function (number) {
   this.dice.push(number)
