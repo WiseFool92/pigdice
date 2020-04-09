@@ -8,22 +8,22 @@ function Players(name) {
   this.turn = turn;
 }
 
-// This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes.
+// This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes. 
+// Are these simply polluting our environment?
 function Score(total) {
   this.dice = [];
   this.total.push(total);
 }
 Score.prototype.addDice = function () {
-  this.roundScore = roundScore += Score;
+  this.roundScore = roundScore += ScoreScore;
 }
 
-// This method we created will run the two subsequent functions to return a dice roll between 1-6
-function rollDice() {
-  return 1 + Math.floor(Math.random()*6)
-  alert("the dice were rolled")
+// Sum of the totals
+Players.prototype.addDice = function () {
+  for (var i = 0; i < this.dice.length; i++) {
+
+  }
 }
-
-
 
 // Creates our players
 var playerOne = new Players("player one");
@@ -34,11 +34,11 @@ var dice = new Dice();
 //   this.sides = sides || 6;
 // }
 
-// Sum of the totals
-Players.prototype.addDice = function () {
-  for (var i = 0; i < this.dice.length; i++) {
 
-  }
+// This method we created will run the two subsequent functions to return a dice roll between 1-6
+function rollDice() {
+  return 1 + Math.floor(Math.random()*6)
+  alert("the dice were rolled")
 }
 
 
@@ -55,8 +55,8 @@ $(document).ready(function() {
   // player two roll event
   $("#rolldice2").on("click", function() {
     player2 = rollDice();
-  event.preventDefault();
+  
   })
-
-  console.log(diceTotal);
+  event.preventDefault();
+  console.log(rollDice);
 });
