@@ -33,7 +33,11 @@ var dice = new Dice();
 // }
 
 // Sum of the totals
-Players
+Players.prototype.addDice = function () {
+  for (var i = 0; i < this.dice.length; i++) {
+
+  }
+}
 
 
 // UI Logic ----------
@@ -46,9 +50,9 @@ $(document).ready(function() {
   })
 
   // player two roll event
-  $("#rolldice2")
+  $("#rolldice2").on("click", function() {
   event.preventDefault();
-
+  })
 
   console.log(diceTotal);
 });
