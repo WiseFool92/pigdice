@@ -12,6 +12,12 @@ function Player(name) {
 var playerOne = new Player("player one");
 var playerTwo = new Player("player two");
 
+// This method we created will run the two subsequent functions to return a dice roll between 1-6
+function rollDice() {
+  //  alert("the dice were rolled")
+  return 1 + Math.floor(Math.random()*6) 
+}
+
 // Sum of the totals
 Player.prototype.addDice = function (number) {
   this.dice.push(number)
@@ -23,6 +29,13 @@ Player.prototype.addDice = function (number) {
 Player.prototype.hold = function () {
   this.gameScore += this.turnScore;
   //(i = 0);
+}
+
+// Victory Condition
+Player.prototype.victor = function() {
+  if (this.gameScore >= 100) {
+    return (this.name + " is Victorious!");
+  }
 }
 
 // Player.prototype.switchPlayers = function() {
@@ -41,20 +54,6 @@ Player.prototype.hold = function () {
 // this.currentPlayerIndex = 1 - this.currentPlayerIndex;
 // ...
 // // Travis example
-
-
-// Victory Condition
-Player.prototype.victor = function() {
-  if (this.gameScore >= 100) {
-    return (this.name + " is Victorious!");
-  }
-}
-
-// This method we created will run the two subsequent functions to return a dice roll between 1-6
-function rollDice() {
-//  alert("the dice were rolled")
-  return 1 + Math.floor(Math.random()*6)
-}
 
 // UI Logic ----------
 
