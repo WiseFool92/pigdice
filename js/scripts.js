@@ -5,7 +5,6 @@ function Players(name) {
   this.name = name;
   this.turnScore = 0;
   this.gameScore = 0;
-  this.turn = turn;
 }
 
 // This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes. 
@@ -48,15 +47,16 @@ $(document).ready(function() {
 
   // player one roll event
   $("#rolldice").on("click", function() {
-    player1 = rollDice();
-  
+    playerOne = rollDice();
+    $("#score1").text(playerOne);
   })
 
   // player two roll event
   $("#rolldice2").on("click", function() {
-    player2 = rollDice();
-  
+    playerTwo = rollDice();
+    $("#score2").text(playerTwo);
   })
+
   event.preventDefault();
   console.log(rollDice);
 });
