@@ -21,9 +21,9 @@ var playerTwo = new Player("player two");
 
 // Sum of the totals
 Player.prototype.addDice = function (number) {
-  for (var i = 0; i < this.dice.length; i++) {
-    if (this.dice[])
-  }
+  this.dice.push(number)
+  this.turnScore = this.dice.reduce(function(total, value){return total+value})
+  console.log(this.turnScore);
 }
 
 Player.prototype.switchPlayers = function() {
