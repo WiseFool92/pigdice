@@ -26,8 +26,21 @@ Player.prototype.addDice = function (number) {
 }
 
 Player.prototype.addDice = function (number) {
-  for (rollDice() = turnScore {
+  for (rollDice() = this.turnScore
+    if (i = 0 ) {
 
+  }
+}
+
+Player.prototype.switchPlayers = function() {
+
+}
+
+
+// Victory Condition
+Player.prototype.victor = function() {
+  if (this.gameScore >= 100) {
+    return (this.name + " is Victorious!")
   }
 }
 
@@ -37,7 +50,7 @@ var playerTwo = new Player("player two");
 
 // This method we created will run the two subsequent functions to return a dice roll between 1-6
 function rollDice() {
-  alert("the dice were rolled")
+//  alert("the dice were rolled")
   return 1 + Math.floor(Math.random()*6)
 }
 
@@ -60,5 +73,5 @@ $(document).ready(function() {
   })
 
   // event.preventDefault();
-  console.log(playerOneRoll);
+  console.log();
 });
