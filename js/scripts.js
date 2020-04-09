@@ -10,12 +10,13 @@ function Player(name) {
 
 // This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes. 
 // Are these simply polluting our environment?
-function Score(total) {
-  this.total.push(total);
-}
-Score.prototype.addDice = function () {
-  this.roundScore = roundScore += ScoreScore;
-}
+
+// function Score(total) {
+//   this.total.push(total);
+// }
+// Score.prototype.addDice = function () {
+//   this.roundScore = roundScore += ScoreScore;
+// }
 
 // Sum of the totals
 Player.prototype.addDice = function (number) {
@@ -24,22 +25,21 @@ Player.prototype.addDice = function (number) {
   }
 }
 
+Player.prototype.addDice = function (number) {
+  for (rollDice() = turnScore {
+
+  }
+}
+
 // Creates our players
 var playerOne = new Player("player one");
 var playerTwo = new Player("player two");
-// Create our Dice... do I even need to do this...?
-// var dice = new Dice();
-// function Dice(sides) {        --- Sides is never defined in our rollDice method
-//   this.sides = sides || 6;
-// }
-
 
 // This method we created will run the two subsequent functions to return a dice roll between 1-6
 function rollDice() {
-  return 1 + Math.floor(Math.random()*6)
   alert("the dice were rolled")
+  return 1 + Math.floor(Math.random()*6)
 }
-
 
 // UI Logic ----------
 
@@ -55,6 +55,7 @@ $(document).ready(function() {
   // player two roll event
   $("#rolldice2").on("click", function() {
     playerTwoRoll = rollDice();
+    playerTwo.addDice(playerTwoRoll)
     $("#score2").text(playerTwoRoll);
   })
 
