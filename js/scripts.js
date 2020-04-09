@@ -13,6 +13,9 @@ function Score(total) {
   this.dice = [];
   this.total.push(total);
 }
+Score.prototype.addDice = function () {
+  this.roundScore = roundScore += Score;
+}
 
 // This method we created will run the two subsequent functions to return a dice roll between 1-6
 function rollDice() {
@@ -20,9 +23,7 @@ function rollDice() {
   alert("the dice were rolled")
 }
 
-Diceroll.prototype.addDice = function () {
-  this.roundScore = roundScore += Diceroll;
-}
+
 
 // Creates our players
 var playerOne = new Players("player one");
