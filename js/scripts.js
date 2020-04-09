@@ -51,14 +51,26 @@ $(document).ready(function() {
   $("#rolldice").on("click", function() {
     playerOneRoll = rollDice();
     playerOne.addDice(playerOneRoll)
-    $("#score1").text(playerOneRoll);
+    $("#currentRoll1").text(playerOneRoll);
+    $("#total1").text()
+  })
+  
+  $("#hold1").on("click", function() {
+    playerOne.hold();
+    $("#total1").text(playerOne.turnScore);
   })
 
   // player two roll event
   $("#rolldice2").on("click", function() {
     playerTwoRoll = rollDice();
     playerTwo.addDice(playerTwoRoll)
-    $("#score2").text(playerTwoRoll);
+    $("#currentRoll2").text(playerTwoRoll);
+    $("#total2").text()
+  })
+
+  $("#hold1").on("click", function() {
+    playerTwo.hold();
+    $("#total2").text(playerTwo.turnScore);
   })
 
   // event.preventDefault();
