@@ -12,34 +12,23 @@ function Player(name) {
 var playerOne = new Player("player one");
 var playerTwo = new Player("player two");
 
-// This constructor will hold our array to count up to 100 for each player. Start with lower number for testing purposes. 
-// Are these simply polluting our environment?
-
 // function Score(total) {
 //   this.total.push(total);
 // }
 // Score.prototype.addDice = function () {
-//   this.roundScore = roundScore += ScoreScore;
+//   this.totalScore = turnScore + gameScore;
 // }
 
 // Sum of the totals
 Player.prototype.addDice = function (number) {
   for (var i = 0; i < this.dice.length; i++) {
-
+    if (this.dice[])
   }
 }
-
-// Player.prototype.addDice = function (number) {
-//   for (rollDice() = this.turnScore
-//     if (i = 0 ) {
-
-//   }
-// }
 
 Player.prototype.switchPlayers = function() {
 
 }
-
 
 // Victory Condition
 Player.prototype.victor = function() {
@@ -47,8 +36,6 @@ Player.prototype.victor = function() {
     return (this.name + " is Victorious!");
   }
 }
-
-
 
 // This method we created will run the two subsequent functions to return a dice roll between 1-6
 function rollDice() {
